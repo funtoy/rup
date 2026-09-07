@@ -4,10 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-async-ssh2-tokio = "0.12.2"
-# 锁定 russh-sftp：async-ssh2-tokio 0.12.2 用了 2.1.1 的 new_opts，
-# 2.3.0 已移除该方法，放开会导致编译失败
-russh-sftp = "=2.1.1"
+async-ssh2-tokio = "0.13"
 tokio = { version = "1", features = ["full"] }
 clap = { version = "4", features = ["derive"] }
 indicatif = "0.18"
